@@ -1,33 +1,3 @@
-var validarNombre = function(nombre){
-	if (nombre == ""){
-	alert("Ingrese su nombre");
-	}
-};
-
-var validarApellido = function(apellido){
-	if (apellido == ""){
-	alert("Ingrese su apellido");
-	}
-};
-
-var validarCorreo = function(correo){
-	if (correo == ""){
-	alert("Ingrese su correo electrónico");
-	}
-};
-
-var validarDireccion = function(direccion){
-	if (direccion == ""){
-	alert("Ingrese su dirección");
-	}
-};
-
-var validarSelector = function(opcion){
-	if (opcion.value == 0) {
-		alert("Ingrese una opción")
-	}
- 
-}
 
 var validar = function(){
  var nombre = document.getElementById("name").value;
@@ -37,14 +7,12 @@ var validar = function(){
  var telefono = document.getElementById("phone").value;
  var selector = document.getElementById("selector")
  var opcion = selector.options[selector.selectedIndex];
+ var caja = document.getElementById("check")
  
-validarNombre(nombre);
-validarApellido(apellido);
-validarCorreo(correo);
-validarDireccion(telefono);
-validarSelector(opcion);
-};
-
-
-
+if (nombre == "" || apellido == "" || correo == "" || direccion == "" || telefono == "" || opcion.value == 0){
+	alert ("Por favor, rellene todos los campos");
+} else if (caja.checked === false){
+	alert ("Debe suscribirse a nuestro newsletter")
+}
+}
 
