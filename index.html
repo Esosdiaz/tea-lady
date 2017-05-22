@@ -12,17 +12,17 @@
 	<section id="forms">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="" name="formulario" method="get">
+		<form action="" id="formulario" method="get">
 			<p><label for="Nombre Dueño"> Nombre:</label><br>
-			<input type="text" name="nombre"></p>
+			<input type="text" id="name" name="nombre"></p>
 			<p><label for="Nombre mascota"> Apellido:</label><br>
-			<input type="text" name="apellido"></p>
+			<input type="text" id="lastName" name="apellido"></p>
 			<p><label for="Email"> Correo Electrónico:</label><br> 
-			<input type="email" name="correo"></p>
+			<input type="email" id="mail" name="correo"></p>
 			<p><label for="Dirección">Dirección: </label><br>
-			<input type="text" name="direccion"></p>
+			<input type="text" id= "adress" name="direccion"></p>
 			<p><label for="Teléfono">Teléfono:</label><br>
-			<input type="text" name="telefono"></p>
+			<input type="text" id="phone" name="telefono"></p>
 			<p><label for="">Selecciona un pack:</label><br>
 			<select name="opciones" id="">
 				<option value="">Escoje tu opción</option>
@@ -32,7 +32,7 @@
 			</select></p>
 			<p><label for=""></label><br>
 			<input type="checkbox" name="check"> Recibe nuestro newsletter mensual con actividades y sorteos <br>
-			<button type="submit" id="btn" name ="btn" form="form1" value="Enviar" onclick="mostrarData()">Enviar</button></p>
+			<button type="submit" id="btn" name ="btn" value="Enviar" onclick="validar()">Enviar</button></p>
 		</form>
 	</section>
 	<section id="clientes">
